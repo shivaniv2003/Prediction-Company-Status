@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<title>My Web Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#plans" class="w3-button w3-block">Predict</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">About</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>Company Checkup!</b></h1>
+    <p>Predict Your Company Status</p>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="https://assets.contenthub.wolterskluwer.com/api/public/content/1d81f05ed24d43399cdb86c11fbebc49?t=w1920l" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom"></span>
+      </div>
+    
+    </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="plans">
+    <div class="w3-center w3-padding-64">
+      <h1>Predict Status</h1>
+      <p>Fill the blanks</p>
+    
+
+    <form id="status-form">
+      <div class="form-group">
+        <label for="total_f">Total Funding:</label>
+        <input type="number" id="total_f" name="total_f" required>
+      </div>
+
+      <div class="form-group">
+        <label for="funding_rounds">Funding Rounds:</label>
+        <input type="number" id="funding_rounds" name="funding_rounds" required>
+      </div>
+
+      <div class="form-group">
+        <label for="seed">Seed Funding:</label>
+        <input type="number" id="seed" name="seed" required>
+      </div>
+
+      <div class="form-group">
+        <label for="venture">Venture Funding:</label>
+        <input type="number" id="venture" name="venture" required>
+      </div>
+
+      <div class="form-group">
+        <label for="market">Market:</label>
+        <input type="text" id="market" name="market" required>
+      </div>
+
+      <div class="form-group">
+        <label for="debt_financing">Debt Financing:</label>
+        <input type="number" id="debt_financing" name="debt_financing" required>
+      </div>
+
+      <div class="form-group">
+        <label for="country_code">Country Code:</label>
+        <input type="text" id="country_code" name="country_code" required>
+      </div>
+
+      <div class="form-group">
+        <label for="state_code">State Code:</label>
+        <input type="text" id="state_code" name="state_code" required>
+      </div>
+    <div>
+      <button type="submit"><i class="fas fa-search"></i> Check Status</button>
+      </div>
+    </form>
+
+    <div id="result">
+    
+    </div>
+  </div>
+
+    
+  <!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">3 things that you can predict</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVoz4dXrbNAzwMQ7lhEtj6bjuLTrFncRNdYQ&usqp=CAU"  width="100" height="100" style="width:100%">
+        <div class="w3-container">
+          <h3>Operating Status</h3>
+          <h5>Operational Status means the ability of an asset, unit, system or centre to perform its operational function(s) characterised as 'fully operational', 'limited operational functions', or 'not available.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjg8up6n-8MFvFH2Faz8CP91KLHIVcjpWQ2A&usqp=CAU" width="100" height="100" style="width:100%">
+        <div class="w3-container">
+          <h3>Acquired Status</h3>
+          <h5>An acquisition is when one company purchases most or all of another company's shares to gain control of that company.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="https://www.indiafilings.com/learn/wp-content/uploads/2023/03/What-does-company-status-strike-off-mean.jpg" width="100" height="100" style="width:100%">
+        <div class="w3-container">
+          <h3>Closing Status</h3>
+         
+          <h5>If a Company is CLOSED it is no longer active and as such does not need to submit any further information to Companies House.</h5>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+  </div>
+
+  <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+    <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+  </form>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
